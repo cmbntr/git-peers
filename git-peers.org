@@ -1,0 +1,64 @@
+
+* Config
+| key                 | default             | description              |
+|---------------------+---------------------+--------------------------|
+| peers.config.branch | team                | name of the peers branch |
+| peers.config.repo   | -                   | URL of the config repo   |
+| peers.local.name    | name of working dir | local repository name    |
+|                     |                     |                          |
+
+* Main
+
+#+NAME: main
+#+BEGIN_SRC sh
+# main
+#+END_SRC
+
+* status
+
+#+NAME: status
+#+BEGIN_SRC sh
+# status
+#+END_SRC
+
+* init
+
+#+NAME: init
+#+BEGIN_SRC sh
+# init
+#+END_SRC
+
+* scan
+   
+#+NAME: scan
+#+BEGIN_SRC sh
+# scan
+#+END_SRC
+
+* helpers
+
+#+NAME: helpers
+#+BEGIN_SRC sh
+# helpers
+#+END_SRC
+
+* tangled 							   :noexport:
+#+BEGIN_SRC sh :tangle git-peers :noweb yes :shebang #!/bin/bash
+<<helpers>>
+
+<<init>>
+<<status>>
+<<scan>>
+
+<<main>>
+#+END_SRC
+
+* Settings 							   :noexport:
+#+TITLE: git-peers
+#+AUTHOR: Michael Locher
+#+OPTIONS: ^:nil creator:nil email:nil d:t
+
+# Local Variables:
+# mode: org
+# coding: utf-8
+# End:
